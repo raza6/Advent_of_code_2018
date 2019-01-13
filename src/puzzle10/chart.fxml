@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="puzzle10.Controller">
+    <HBox>
+	    <VBox>
+	         <ScatterChart fx:id="chart" legendVisible="false" prefHeight="800.0" prefWidth="800.0">
+						<xAxis><NumberAxis autoRanging="true" label="X"/></xAxis>
+						<yAxis><NumberAxis autoRanging="true" label="Y"/></yAxis>
+			 </ScatterChart>
+	    </VBox>
+	        <VBox>
+			 <Button fx:id="upButton500" text="Update 500" onAction="#updatePlot500"/>
+			 <Button fx:id="upButton10" text="Update 10" onAction="#updatePlot10"/>
+			 <Button fx:id="upButton1" text="Update 1" onAction="#updatePlot1"/>
+	    </VBox>
+    </HBox>
+</AnchorPane>
